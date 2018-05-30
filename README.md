@@ -21,7 +21,5 @@ cas服务器安装步骤：<br>
 
 4, 用https://localhost:8443访问服务器 <br>
 5, 用域名访问服务器 （/conf/server.xml）<br>
-    {% highlight html linenos %}
-    <Host name="www.cobee.com.cn"  appBase="webapps"
-                unpackWARs="true" autoDeploy="true">
-    {% endhighlight %}
+    &lt;Host name="www.cobee.com.cn"  appBase="webapps"
+                unpackWARs="true" autoDeploy="true"&gt;
