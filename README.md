@@ -23,3 +23,8 @@ cas服务器安装步骤：<br>
 5, 用域名访问服务器 （/conf/server.xml）<br>
     &lt;Host name="www.cobee.com.cn"  appBase="webapps"
                 unpackWARs="true" autoDeploy="true"&gt;
+6, 部署cas应用 <br>
+    在maven repository中搜索cas-server-webapp，使用4.2.7版本，下载war文件 <br>
+    
+7, 访问：https://www.cobee.com.cn:8443/cas/login <br>
+    输入默认用户名和密码casuser：Mellon
