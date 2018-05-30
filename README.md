@@ -18,3 +18,8 @@ cas服务器安装步骤：<br>
     <Connector port="8443" protocol="org.apache.coyote.http11.Http11NioProtocol"
            maxThreads="150" SSLEnabled="true" scheme="https" secure="true"
            clientAuth="false" sslProtocol="TLS" keystoreFile="d:/caskey/cobeekey" keystorePass="123456" /> <br>
+
+4, 用https://localhost:8443访问服务器 <br>
+5, 用域名访问服务器 （/conf/server.xml）<br>
+    <Host name="www.cobee.com.cn"  appBase="webapps"
+                unpackWARs="true" autoDeploy="true">
