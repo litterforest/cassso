@@ -15,9 +15,9 @@ cas服务器安装步骤：<br>
     keytool -delete -alias cobee -keystore D:\Java\jre1.8.0_171\lib\security\cacerts<br>
 3, 把开Tomcat8.0的SSL功能 （/conf/server.xml）<br>
     增加参数说明(注意大小写)：keystoreFile：在第一步创建的key存放位置, keystorePass：创建证书时的密码 <br>
-    <Connector port="8443" protocol="org.apache.coyote.http11.Http11NioProtocol"
+    &lt;Connector port="8443" protocol="org.apache.coyote.http11.Http11NioProtocol"
            maxThreads="150" SSLEnabled="true" scheme="https" secure="true"
-           clientAuth="false" sslProtocol="TLS" keystoreFile="d:/caskey/cobeekey" keystorePass="123456" /> <br>
+           clientAuth="false" sslProtocol="TLS" keystoreFile="d:/caskey/cobeekey" keystorePass="123456" /&gt; <br>
 
 4, 用https://localhost:8443访问服务器 <br>
 5, 用域名访问服务器 （/conf/server.xml）<br>
